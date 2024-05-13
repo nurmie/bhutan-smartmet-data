@@ -1,0 +1,7 @@
+# Model available after
+# 00 UTC = 09:00 UTC
+5 * * * * utcrun 9 /smartmet/run/data/gsm/bin/gsm.sh 00
+# 12 UTC = 21:00 UTC
+5 * * * * utcrun 21 /smartmet/run/data/gsm/bin/gsm.sh 12
+# UTC run does not work correctly? 
+#15 2 * * * sh /smartmet/run/data/gsm/bin/gsm.sh 12

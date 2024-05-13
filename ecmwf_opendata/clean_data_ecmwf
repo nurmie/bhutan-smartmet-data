@@ -1,0 +1,9 @@
+#!/bin/sh
+# Clean ECMWF data
+cleaner -maxfiles 4 '_ecmwf_.*_surface.sqd' /smartmet/data/ecmwf_opendata
+cleaner -maxfiles 4 '_ecmwf_.*_pressure.sqd' /smartmet/data/ecmwf_opendata
+cleaner -maxfiles 4 '_ecmwf_.*_surface.sqd' /smartmet/editor/in
+cleaner -maxfiles 4 '_ecmwf_.*_pressure.sqd' /smartmet/editor/in
+
+# Clean incoming ECMWF data older than 1 day (1 * 24 * 60 = 1440 min)
+#find /smartmet/data/incoming/ecmwf -type f -mmin +1440 -delete

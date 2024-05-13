@@ -1,0 +1,10 @@
+#!/bin/sh
+# Clean WRF data
+cleaner -maxfiles 4 '_wrf_.*d02_surface.sqd' /smartmet/data/wrf
+cleaner -maxfiles 4 '_wrf_.*d02_pressure.sqd' /smartmet/data/wrf
+cleaner -maxfiles 4 '_wrf_.*d02_surface.sqd' /smartmet/editor/in
+cleaner -maxfiles 4 '_wrf_.*d02_pressure.sqd' /smartmet/editor/in
+cleaner -maxfiles 4 '_wrf_.*d01_surface.sqd' /smartmet/data/wrf
+cleaner -maxfiles 4 '_wrf_.*d01_pressure.sqd' /smartmet/data/wrf
+cleaner -maxfiles 4 '_wrf_.*d01_surface.sqd' /smartmet/editor/in
+cleaner -maxfiles 4 '_wrf_.*d01_pressure.sqd' /smartmet/editor/in

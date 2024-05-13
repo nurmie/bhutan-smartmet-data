@@ -1,0 +1,2 @@
+#!/bin/bash
+/smartmet/run/data/wrf/bin/wrf.sh 06 d01 & /smartmet/run/data/wrf/bin/wrf.sh 06 d02

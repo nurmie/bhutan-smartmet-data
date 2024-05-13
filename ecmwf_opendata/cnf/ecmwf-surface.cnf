@@ -1,0 +1,32 @@
+#
+# Grib to QD Conversion Tables for Centre ECMF
+# GRIB1 ESD* files
+#
+# ECMWF Parameter Database
+# http://apps.ecmwf.int/codes/grib/param-db
+#
+# List of available SmartMetIDs
+# qdinfo -l
+
+# GribID;SmartMetID;Name;Base;Scale;LevelType;LevelValue;InterpolationMethod
+
+# 1: Mean Sea Level Pressure [Pa]
+151;1;Mean Sea Level Pressure (msl);0;0.01;102;0
+
+# 11742: Surface Pressure [Pa]
+134;11742;surface air pressure;0;0.1;1;0
+
+# 4: 2 Metre Temperature [K]
+167;4;2 Metre Temperature (2t);-273.15;1;105;2
+
+# 10: 2 Metre Dewpoint Temperature [K]
+168;10;2 Metre Dewpoint Temperature (2d);-273.15;1;105;2
+
+# 23: 10 Metre U Wind Component [m s**-1]
+165;23;10 Metre U Wind Component (10u);0;1;105;10
+
+# 24: 10 Metre V Wind Component [m s**-1]
+166;24;10 Metre V Wind Component (10v);0;1;105;10
+
+# 50: Total Precipitation [m]
+228;50;Total Precipitation (tp);0;1000;1;0

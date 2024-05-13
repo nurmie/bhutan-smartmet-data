@@ -1,0 +1,13 @@
+# Model available after
+# 00 UTC = 07:55 UTC
+#10 * * * * utcrun 8 /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 00
+10 14 * * * sh /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 00
+# 06 UTC = 13:15 UTC
+#25 * * * * utcrun 13 
+25 19 * * * sh /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 06
+# 12 UTC = 19:55 UTC
+#10 * * * * utcrun 20 /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 12
+10 2 * * * sh /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 12
+# 18 UTC = 01:15 UTC
+#25 * * * * utcrun 1 
+25 7 * * * sh /smartmet/run/data/ecmwf_opendata/bin/fetch_do_ecmwf_opendata.sh 18

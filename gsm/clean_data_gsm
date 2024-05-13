@@ -1,0 +1,4 @@
+#!/bin/sh
+# Clean GSM data
+cleaner -maxfiles 4 '_gsm_.*_surface.sqd' /smartmet/data/gsm
+cleaner -maxfiles 2 '_gsm_.*_surface.sqd' /smartmet/editor/in
