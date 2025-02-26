@@ -1,2 +1,2 @@
-var x2 = par50 - AVGT(-1, -1, par50)
-par50 = x2
+// TotalPrec to hourly Prec 
+PAR353 = (PAR50 - PeekT(PAR50, -timestep)) / timestep
