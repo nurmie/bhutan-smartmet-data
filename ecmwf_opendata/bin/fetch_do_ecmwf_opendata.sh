@@ -64,8 +64,8 @@ time aws s3 sync --exclude "*" --include "*grib2" --no-sign-request s3://ecmwf-f
 # Surface
 gribtoqd -t -n -d -c $CNF/ecmwf-surface.cnf -L 1 -p "240,ECMWF Surface" -G $AREA -o $TMP/${OUTNAME}_surface.sqd ${INCOMING_TMP}/20*h-*-fc.grib2
 
-# Postproces
-qdscript $CNF/ecmwf-surface.st < $TMP/${OUTNAME}_surface.sqd_levelType_1 > $TMP/${OUTNAME}_surface.sqd_levelType_1_tmp
+# Postproces, add Prec1h
+qdscript -a 353 $CNF/ecmwf-surface.st < $TMP/${OUTNAME}_surface.sqd_levelType_1 > $TMP/${OUTNAME}_surface.sqd_levelType_1_tmp
 
 # Versionfilter
 qdversionchange -a -w 0 7 < $TMP/${OUTNAME}_surface.sqd_levelType_1_tmp > $TMP/${OUTNAME}_surface.sqd
